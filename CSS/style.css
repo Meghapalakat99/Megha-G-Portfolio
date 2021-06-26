@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --blue:rgba(70, 208, 233, 0.781);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--blue);
+    color:#333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--blue);
+}
+
+body{
+    background:#111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+/*--------------------------------------------------------------
+# Header section
+--------------------------------------------------------------*/
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    border:.7rem solid var(--blue);
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color:rgb(136, 194, 233);
+}
+
+header .user .post{
+    font-size: 2rem;
+    color: rgb(143, 183, 235);
+}
+
+header .navbar{
+    display: flex;
+    justify-content: none;
+}
+
+
+header .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0 px;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:rgb(137, 231, 231);
+    font-size: 1.4rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background:var(--blue);
+}
+/*--------------------------------------------------------------
+# Home Section
+--------------------------------------------------------------*/
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color: rgb(160, 206, 248);;
+}
+
+.home h1{
+    font-size:5rem;
+    color:rgba(190, 241, 250, 0.801);;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.home p{
+    font-size:2rem;
+    color:rgb(30, 154, 170);
+    padding: 1rem 0;
+}
+/*--------------------------------------------------------------
+# About Me
+--------------------------------------------------------------*/
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--blue);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+    justify-content: center;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:var(--blue);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color:rgb(95, 227, 250);
+    padding:0 .5rem;
+}
+/*--------------------------------------------------------------
+# Education
+--------------------------------------------------------------*/
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid rgba(123, 235, 235, 0.603);
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:rgba(92, 245, 232, 0.76);
+    color:rgb(163, 219, 241);
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:rgba(167, 227, 238, 0.726);
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color: rgb(98, 215, 219);;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--blue);
+}
+/*--------------------------------------------------------------
+# Skill Section
+--------------------------------------------------------------*/
+.skills .progress {
+    height: 50px;
+    display: block;
+    background: none;
+}
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-wrap {
+    background: rgba(19, 219, 209, 0.89);
+}
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: rgba(70, 208, 233, 0.781);
+}
+/*--------------------------------------------------------------
+# Contact me section
+--------------------------------------------------------------*/
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:#eee;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color:var(--blue);
+}
+/*--------------------------------------------------------------
+# Credits
+--------------------------------------------------------------*/
+.credits {
+    text-align: right;
+    right: 0;
+    font-size: 15px;
+    color: rgb(26, 224, 224);
+    z-index: 999999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+} 
+.credits a {
+    color: rgba(70, 208, 233, 0.781);
+    transition: 0.3s;
+} 
+.credits a:hover {
+    color: #fff;
+}
